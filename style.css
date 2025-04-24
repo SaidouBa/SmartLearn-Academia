@@ -5,30 +5,34 @@ body{
     box-sizing: border-box;
 }
 
-.top-logo{
-   position: relative;
+.top-logos{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px 20px;
    height: 80px;
-   background-color: #f2f2f2;
+   background-color: #136a7e6f;
    border-bottom: 2px solid #ccc;
 }
+.top-logos img { height: 80px; }
 .logo-gauche{
    position: absolute;
-   top: 10px;
+   top: 30px;
    left: 10px;
-   width: 100px;
-   height: auto;
+   width: 80px;
+   margin-left: auto;
 }
 .logo-droite{
    position: absolute;
-   top: 10px;
+   top: 30px;
    right: 10px;
-   width: 100px;
-   height: auto;
+   width: 80px;
+   margin-right: auto;
 }
 
 @media (max-width: 600px){
    .logo-gauche, .logo-droite{
-      width: 70px;
+      width: 60px;
    }
 }
 
@@ -94,10 +98,21 @@ nav ul li {
     padding: 10px;
  }
 
- .navbar {
-   background-color: #006666;
-   padding: 10px 20px;
-   position: relative;
+ .nav-links {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   padding: 0;
+   margin: 0;
+ }
+
+ .nav-links li {
+   margin: 0 15px;
+ }
+
+ .nav-links a {
+   color: white;
+   text-decoration: none;
  }
  .menu-toggle {
    font-size: 30px;
@@ -111,6 +126,12 @@ nav ul li {
    padding: 0;
    display: flex;
    gap: 20px;
+ }
+ .bar {
+   height: 3px;
+   width: 25px;
+   background-color: white;
+   margin: 4px 0;
  }
  .menu li a {
    color: white;
